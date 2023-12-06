@@ -95,12 +95,15 @@ class PeerConnectionUtils(
             )
         }
         else{
-            arrayListOf(
+            /*arrayListOf(
                 PeerConnection.IceServer.builder("stun:42.116.138.35:3478").createIceServer(),
                 PeerConnection.IceServer.builder("turn:42.116.138.35:3478")
                     .setUsername("turnuser")
                     .setPassword("turn456")
                     .createIceServer()
+            )*/
+            arrayListOf(
+                PeerConnection.IceServer.builder("stun:stun.l.google.com:19302").createIceServer()
             )
     }
 
